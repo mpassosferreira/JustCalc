@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Aula4.1.xcodeproj">
+      location = "self:/Users/marcio/Developer/Aula4.1/JustCalc.xcodeproj">
    </FileRef>
 </Workspace>
