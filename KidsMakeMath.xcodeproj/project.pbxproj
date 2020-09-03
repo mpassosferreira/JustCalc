@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D58972F624FD222D0008F9FA /* JustCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58972F624FD222D0008F9FA /* KidsMakeMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsMakeMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58972F924FD222D0008F9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58972FB24FD222D0008F9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D58972FD24FD222D0008F9FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		D58972ED24FD222D0008F9FA = {
 			isa = PBXGroup;
 			children = (
-				D58972F824FD222D0008F9FA /* JustCalc */,
+				D58972F824FD222D0008F9FA /* KidsMakeMath */,
 				D58972F724FD222D0008F9FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		D58972F724FD222D0008F9FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D58972F624FD222D0008F9FA /* JustCalc.app */,
+				D58972F624FD222D0008F9FA /* KidsMakeMath.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D58972F824FD222D0008F9FA /* JustCalc */ = {
+		D58972F824FD222D0008F9FA /* KidsMakeMath */ = {
 			isa = PBXGroup;
 			children = (
 				D58972F924FD222D0008F9FA /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				D589730424FD22330008F9FA /* LaunchScreen.storyboard */,
 				D589730724FD22330008F9FA /* Info.plist */,
 			);
-			path = JustCalc;
+			path = KidsMakeMath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D58972F524FD222D0008F9FA /* JustCalc */ = {
+		D58972F524FD222D0008F9FA /* KidsMakeMath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D589730A24FD22330008F9FA /* Build configuration list for PBXNativeTarget "JustCalc" */;
+			buildConfigurationList = D589730A24FD22330008F9FA /* Build configuration list for PBXNativeTarget "KidsMakeMath" */;
 			buildPhases = (
 				D58972F224FD222D0008F9FA /* Sources */,
 				D58972F324FD222D0008F9FA /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = JustCalc;
+			name = KidsMakeMath;
 			productName = Aula4.1;
-			productReference = D58972F624FD222D0008F9FA /* JustCalc.app */;
+			productReference = D58972F624FD222D0008F9FA /* KidsMakeMath.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D58972F124FD222D0008F9FA /* Build configuration list for PBXProject "JustCalc" */;
+			buildConfigurationList = D58972F124FD222D0008F9FA /* Build configuration list for PBXProject "KidsMakeMath" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D58972F524FD222D0008F9FA /* JustCalc */,
+				D58972F524FD222D0008F9FA /* KidsMakeMath */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +286,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJYXE96WD2;
-				INFOPLIST_FILE = JustCalc/Info.plist;
+				INFOPLIST_FILE = KidsMakeMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpassosferreira.JustCalc;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpassos.KidsMakeMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +305,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJYXE96WD2;
-				INFOPLIST_FILE = JustCalc/Info.plist;
+				INFOPLIST_FILE = KidsMakeMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpassosferreira.JustCalc;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpassos.KidsMakeMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D58972F124FD222D0008F9FA /* Build configuration list for PBXProject "JustCalc" */ = {
+		D58972F124FD222D0008F9FA /* Build configuration list for PBXProject "KidsMakeMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D589730824FD22330008F9FA /* Debug */,
@@ -328,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D589730A24FD22330008F9FA /* Build configuration list for PBXNativeTarget "JustCalc" */ = {
+		D589730A24FD22330008F9FA /* Build configuration list for PBXNativeTarget "KidsMakeMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D589730B24FD22330008F9FA /* Debug */,

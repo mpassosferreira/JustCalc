@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Aula4.1
+//  KidsMakeMath
 //
 //  Created by Marcio P Ferreira on 31/08/20.
 //  Copyright © 2020 Passos. All rights reserved.
@@ -38,12 +38,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn9: UIButton!
     
     //var arrayExample = ["2.5", "+", "3.7", "=", "6.2"]
-    var array = ["", "", "", "", ""]
+    var array = ["0", "", "", "", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelHello.text = "0"
         labelHello.font = UIFont.boldSystemFont(ofSize: 60.0)
+        labelHello.layer.borderColor = UIColor.darkGray.cgColor
+        labelHello.layer.borderWidth = 4.0
+        labelHello.layer.cornerRadius = 10
         
         btnPlus.setTitle("➕", for: .normal)
         btnPlus.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
@@ -292,3 +294,12 @@ class ViewController: UIViewController {
     }
     
 }
+
+extension RangeReplaceableCollection where Self: StringProtocol {
+    func paddingToLeft(upTo length: Int, using element: Element = " ") -> SubSequence {
+        return suffix(Swift.max(count, count-length)) + repeatElement(element, count: Swift.max(0, length-count))
+    }
+}
+
+
+
