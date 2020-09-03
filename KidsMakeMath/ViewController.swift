@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn9: UIButton!
     
     //var arrayExample = ["2.5", "+", "3.7", "=", "6.2"]
-    var array = ["0", "", "", "", ""]
+    var array = ["", "", "", "", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         labelHello.layer.borderColor = UIColor.darkGray.cgColor
         labelHello.layer.borderWidth = 4.0
         labelHello.layer.cornerRadius = 10
+        labelHello.text = "0"
         
         btnPlus.setTitle("➕", for: .normal)
         btnPlus.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
@@ -80,33 +81,43 @@ class ViewController: UIViewController {
         btnResult.backgroundColor = UIColor.white
         btnResult.transform = btnResult.transform.rotated(by: CGFloat(Double.pi / 2))
         
+        btn0.tag = 0
         btn0.setTitle("0️⃣", for: .normal)
         btn0.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn0.backgroundColor = UIColor.white
+        btn1.tag = 1
         btn1.setTitle("1️⃣", for: .normal)
         btn1.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn1.backgroundColor = UIColor.white
+        btn2.tag = 2
         btn2.setTitle("2️⃣", for: .normal)
         btn2.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn2.backgroundColor = UIColor.white
+        btn3.tag = 3
         btn3.setTitle("3️⃣", for: .normal)
         btn3.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn3.backgroundColor = UIColor.white
+        btn4.tag = 4
         btn4.setTitle("4️⃣", for: .normal)
         btn4.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn4.backgroundColor = UIColor.white
+        btn5.tag = 5
         btn5.setTitle("5️⃣", for: .normal)
         btn5.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn5.backgroundColor = UIColor.white
+        btn6.tag = 6
         btn6.setTitle("6️⃣", for: .normal)
         btn6.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn6.backgroundColor = UIColor.white
+        btn7.tag = 7
         btn7.setTitle("7️⃣", for: .normal)
         btn7.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn7.backgroundColor = UIColor.white
+        btn8.tag = 8
         btn8.setTitle("8️⃣", for: .normal)
         btn8.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn8.backgroundColor = UIColor.white
+        btn9.tag = 9
         btn9.setTitle("9️⃣", for: .normal)
         btn9.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
         btn9.backgroundColor = UIColor.white
@@ -116,44 +127,8 @@ class ViewController: UIViewController {
        labelHello.text =  "\(values[0])\(values[1])\(values[2])\(values[3])\(values[4])"
     }
     
-    @IBAction func action0(_ sender: Any) {
-        prepareData(value: "0")
-    }
-    
-    @IBAction func action1(_ sender: Any) {
-        prepareData(value: "1")
-    }
-    
-    @IBAction func action2(_ sender: Any) {
-        prepareData(value: "2")
-    }
-    
-    @IBAction func action3(_ sender: Any) {
-        prepareData(value: "3")
-    }
-    
-    @IBAction func action4(_ sender: Any) {
-           prepareData(value: "4")
-    }
-   
-    @IBAction func action5(_ sender: Any) {
-       prepareData(value: "5")
-    }
-   
-    @IBAction func action6(_ sender: Any) {
-       prepareData(value: "6")
-    }
-    
-    @IBAction func action7(_ sender: Any) {
-        prepareData(value: "7")
-    }
-    
-    @IBAction func action8(_ sender: Any) {
-        prepareData(value: "8")
-    }
-    
-    @IBAction func action9(_ sender: Any) {
-        prepareData(value: "9")
+    @IBAction func setNumber(_ sender: UIButton) {
+        prepareData(value: String(sender.tag))
     }
     
     @IBAction func actionPlus(_ sender: Any) {
@@ -294,12 +269,3 @@ class ViewController: UIViewController {
     }
     
 }
-
-extension RangeReplaceableCollection where Self: StringProtocol {
-    func paddingToLeft(upTo length: Int, using element: Element = " ") -> SubSequence {
-        return suffix(Swift.max(count, count-length)) + repeatElement(element, count: Swift.max(0, length-count))
-    }
-}
-
-
-
