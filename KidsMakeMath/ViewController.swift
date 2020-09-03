@@ -90,6 +90,25 @@ class ViewController: UIViewController {
        labelHello.text =  "\(values[0])\(values[1])\(values[2])\(values[3])\(values[4])"
     }
     
+    func prepareData (value: String) {
+        initializeLabel()
+        if array[1] == "" {
+            array[0] = array[0] + value
+        } else {
+            array[2] = array[2] + value
+        }
+        setLabel(values: array)
+    }
+    
+    func prepareOperation (operation: String) {
+        if array[0] != "", array[2] == "" {
+            array[1] = operation
+            let isInteger = floor(Double(array[0])!) == Double(array[0])!
+            array[0] = isInteger ? String(Int(Double(array[0])!)) : String(array[0])
+            setLabel(values: array)
+        }
+    }
+    
     @IBAction func setNumber(_ sender: UIButton) {
         prepareData(value: String(sender.tag))
     }
@@ -111,49 +130,33 @@ class ViewController: UIViewController {
     }
     
     @IBAction func actionPercent(_ sender: Any) {
-        applyPercent()
+        if let value1 = Double(array[0]), array[2] == "" {
+            let result = value1 / 100
+            let isInteger = floor(result) == result
+            array[0] = isInteger ? String(Int(result)) : String(result)
+        }
+        setLabel(values: array)
     }
     
     @IBAction func actionChangeSignal(_ sender: Any) {
-        actionChangeSignal()
+        if let value1 = Double(array[0]), array[2] == "" {
+            let result = value1 * -1
+            let isInteger = floor(result) == result
+            array[0] = isInteger ? String(Int(result)) : String(result)
+        }
+        setLabel(values: array)
     }
     
     @IBAction func actionApplyDecimal(_ sender: Any) {
-        applyDecimal()
+        if array[1] == "" {
+            array[0] = array[0] == "" ? array[0] + "0." : array[0] + "."
+        } else {
+            array[2] = array[2] == "" ? array[2] + "0." : array[2] + "."
+        }
+        setLabel(values: array)
     }
     
     @IBAction func actionSqrt(_ sender: Any) {
-        applySqrt()
-    }
-    
-    @IBAction func actionClean(_ sender: Any) {
-        for i in 0 ..< array.count {
-            array[i] = ""
-        }
-        setLabel(values: array)
-        labelHello.text = "0"
-    }
-    
-    func prepareData (value: String) {
-        initializeLabel()
-        if array[1] == "" {
-            array[0] = array[0] + value
-        } else {
-            array[2] = array[2] + value
-        }
-        setLabel(values: array)
-    }
-    
-    func prepareOperation (operation: String) {
-        if array[0] != "", array[2] == "" {
-            array[1] = operation
-            let isInteger = floor(Double(array[0])!) == Double(array[0])!
-            array[0] = isInteger ? String(Int(Double(array[0])!)) : String(array[0])
-            setLabel(values: array)
-        }
-    }
-    
-    func applySqrt() {
         if let value = Double(array[0]), array[2] == "" {
             let isInt = floor(value) == value
             let result = isInt ? sqrt(value) : Double(array[0])
@@ -163,31 +166,12 @@ class ViewController: UIViewController {
         setLabel(values: array)
     }
     
-    func applyPercent() {
-        if let value1 = Double(array[0]), array[2] == "" {
-            let result = value1 / 100
-            let isInteger = floor(result) == result
-            array[0] = isInteger ? String(Int(result)) : String(result)
+    @IBAction func actionClean(_ sender: Any) {
+        for i in 0 ..< array.count {
+            array[i] = ""
         }
         setLabel(values: array)
-    }
-    
-    func actionChangeSignal() {
-        if let value1 = Double(array[0]), array[2] == "" {
-            let result = value1 * -1
-            let isInteger = floor(result) == result
-            array[0] = isInteger ? String(Int(result)) : String(result)
-        }
-        setLabel(values: array)
-    }
-    
-    func applyDecimal() {
-        if array[1] == "" {
-            array[0] = array[0] == "" ? array[0] + "0." : array[0] + "."
-        } else {
-            array[2] = array[2] == "" ? array[2] + "0." : array[2] + "."
-        }
-        setLabel(values: array)
+        labelHello.text = "0"
     }
     
     func initializeLabel() {
