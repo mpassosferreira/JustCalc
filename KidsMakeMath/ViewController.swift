@@ -81,46 +81,24 @@ class ViewController: UIViewController {
         btnResult.backgroundColor = UIColor.white
         btnResult.transform = btnResult.transform.rotated(by: CGFloat(Double.pi / 2))
         
-        btn0.tag = 0
-        btn0.setTitle("0️⃣", for: .normal)
-        btn0.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn0.backgroundColor = UIColor.white
-        btn1.tag = 1
-        btn1.setTitle("1️⃣", for: .normal)
-        btn1.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn1.backgroundColor = UIColor.white
-        btn2.tag = 2
-        btn2.setTitle("2️⃣", for: .normal)
-        btn2.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn2.backgroundColor = UIColor.white
-        btn3.tag = 3
-        btn3.setTitle("3️⃣", for: .normal)
-        btn3.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn3.backgroundColor = UIColor.white
-        btn4.tag = 4
-        btn4.setTitle("4️⃣", for: .normal)
-        btn4.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn4.backgroundColor = UIColor.white
-        btn5.tag = 5
-        btn5.setTitle("5️⃣", for: .normal)
-        btn5.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn5.backgroundColor = UIColor.white
-        btn6.tag = 6
-        btn6.setTitle("6️⃣", for: .normal)
-        btn6.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn6.backgroundColor = UIColor.white
-        btn7.tag = 7
-        btn7.setTitle("7️⃣", for: .normal)
-        btn7.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn7.backgroundColor = UIColor.white
-        btn8.tag = 8
-        btn8.setTitle("8️⃣", for: .normal)
-        btn8.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn8.backgroundColor = UIColor.white
-        btn9.tag = 9
-        btn9.setTitle("9️⃣", for: .normal)
-        btn9.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btn9.backgroundColor = UIColor.white
+
+        buildNumberButton(btn: btn0, tag: 0, title: "0️⃣")
+        buildNumberButton(btn: btn1, tag: 1, title: "1️⃣")
+        buildNumberButton(btn: btn2, tag: 2, title: "2️⃣")
+        buildNumberButton(btn: btn3, tag: 3, title: "3️⃣")
+        buildNumberButton(btn: btn4, tag: 4, title: "4️⃣")
+        buildNumberButton(btn: btn5, tag: 5, title: "5️⃣")
+        buildNumberButton(btn: btn6, tag: 6, title: "6️⃣")
+        buildNumberButton(btn: btn7, tag: 7, title: "7️⃣")
+        buildNumberButton(btn: btn8, tag: 8, title: "8️⃣")
+        buildNumberButton(btn: btn9, tag: 9, title: "9️⃣")
+    }
+    
+    func buildNumberButton (btn: UIButton, tag: Int, title: String) {
+       btn.tag = tag
+       btn.setTitle(title, for: .normal)
+       btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
+       btn.backgroundColor = UIColor.white
     }
     
     func setLabel (values: [String]) {
