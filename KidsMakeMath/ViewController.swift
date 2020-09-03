@@ -48,18 +48,6 @@ class ViewController: UIViewController {
         labelHello.layer.cornerRadius = 10
         labelHello.text = "0"
         
-        btnPlus.setTitle("➕", for: .normal)
-        btnPlus.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnPlus.backgroundColor = UIColor.white
-        btnMinus.setTitle("➖", for: .normal)
-        btnMinus.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnMinus.backgroundColor = UIColor.white
-        btnTimes.setTitle("✖️", for: .normal)
-        btnTimes.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnTimes.backgroundColor = UIColor.white
-        btnDivision.setTitle("➗", for: .normal)
-        btnDivision.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnDivision.backgroundColor = UIColor.white
         
         btnDecimal.setTitle("⏺", for: .normal)
         btnDecimal.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
@@ -81,7 +69,11 @@ class ViewController: UIViewController {
         btnResult.backgroundColor = UIColor.white
         btnResult.transform = btnResult.transform.rotated(by: CGFloat(Double.pi / 2))
         
-
+        buildOperatorButton(btn: btnPlus, title: "➕")
+        buildOperatorButton(btn: btnMinus, title: "➖")
+        buildOperatorButton(btn: btnTimes, title: "✖️")
+        buildOperatorButton(btn: btnDivision, title: "➗")
+        
         buildNumberButton(btn: btn0, tag: 0, title: "0️⃣")
         buildNumberButton(btn: btn1, tag: 1, title: "1️⃣")
         buildNumberButton(btn: btn2, tag: 2, title: "2️⃣")
@@ -96,6 +88,12 @@ class ViewController: UIViewController {
     
     func buildNumberButton (btn: UIButton, tag: Int, title: String) {
        btn.tag = tag
+       btn.setTitle(title, for: .normal)
+       btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
+       btn.backgroundColor = UIColor.white
+    }
+    
+    func buildOperatorButton (btn: UIButton, title: String) {
        btn.setTitle(title, for: .normal)
        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
        btn.backgroundColor = UIColor.white
