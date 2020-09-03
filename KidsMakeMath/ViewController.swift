@@ -48,31 +48,18 @@ class ViewController: UIViewController {
         labelHello.layer.cornerRadius = 10
         labelHello.text = "0"
         
-        
-        btnDecimal.setTitle("⏺", for: .normal)
-        btnDecimal.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnDecimal.backgroundColor = UIColor.white
-        btnPercent.setTitle("💯", for: .normal)
-        btnPercent.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnPercent.backgroundColor = UIColor.white
-        btnInvert.setTitle("❗️", for: .normal)
-        btnInvert.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnInvert.backgroundColor = UIColor.white
-        btnClean.setTitle("🔙", for: .normal)
-        btnClean.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnClean.backgroundColor = UIColor.white
-        btnSqrt.setTitle("✔️", for: .normal)
-        btnSqrt.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnSqrt.backgroundColor = UIColor.white
-        btnResult.setTitle("󠀽󠀽⏸", for: .normal)
-        btnResult.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
-        btnResult.backgroundColor = UIColor.white
-        btnResult.transform = btnResult.transform.rotated(by: CGFloat(Double.pi / 2))
-        
         buildOperatorButton(btn: btnPlus, title: "➕")
         buildOperatorButton(btn: btnMinus, title: "➖")
         buildOperatorButton(btn: btnTimes, title: "✖️")
         buildOperatorButton(btn: btnDivision, title: "➗")
+        buildOperatorButton(btn: btnDecimal, title: "⏺")
+        buildOperatorButton(btn: btnClean, title: "🔙")
+        buildOperatorButton(btn: btnPercent, title: "💯")
+        buildOperatorButton(btn: btnInvert, title: "❗️")
+        buildOperatorButton(btn: btnSqrt, title: "✔️")
+        buildOperatorButton(btn: btnResult, title: "󠀽󠀽⏸")
+        
+        btnResult.transform = btnResult.transform.rotated(by: CGFloat(Double.pi / 2))
         
         buildNumberButton(btn: btn0, tag: 0, title: "0️⃣")
         buildNumberButton(btn: btn1, tag: 1, title: "1️⃣")
