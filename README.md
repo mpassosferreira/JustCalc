@@ -10,6 +10,7 @@
 
 <p align="center">
   <p align="center">
+    A simple calculator for kids. It stil needs some improvements.
    First project created for an IOS development course taught by Digital House in partnership with the SANTANDER CODERS program.
     <br />
     <br />
@@ -22,6 +23,8 @@
   </p>
  </p>
   
+## About The Project
+
 
 ## Meta
 
