@@ -10,8 +10,7 @@
 
 <p align="center">
   <p align="center">
-    A simple calculator for kids. It stil needs some improvements.
-   
+     A simple calculator for kids. It stil needs some improvements.
     <br />
     <br />
     <a href="https://github.com/mpassosferreira/KidsMakeMath/issues">Report Bug</a>
