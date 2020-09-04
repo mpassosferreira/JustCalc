@@ -10,7 +10,7 @@
 
 <p align="center">
   <p align="center">
-     A simple calculator for kids. It stil needs some improvements.
+     A simple calculator for kids. It still needs some improvements.
     <br />
     <br />
     <a href="https://github.com/mpassosferreira/KidsMakeMath/issues">Report Bug</a>
@@ -25,6 +25,25 @@
 ## About The Project
 
 First project created for an IOS development course taught by Digital House in partnership with the SANTANDER CODERS program.
+
+
+### Installation
+
+1.  Clone the repo
+```sh
+git clone https://github.com/mpassosferreira/KidsMakeMath.git
+```
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## Meta
 
