@@ -18,7 +18,7 @@
     <a href="https://github.com/mpassosferreira/KidsMakeMath/issues">Request Feature</a>
     <br />
     <br />
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="screen-shot_iphone 11.png" alt="Screen Shoot Iphone 11" width="200" height="500">
   </p>
  </p>
   
