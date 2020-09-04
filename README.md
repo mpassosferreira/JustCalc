@@ -52,8 +52,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Marcio Passos – [@mpassosferreira](https://twitter.com/mpassosferreira)
 
-Distributed under the MIT license. See ``LICENSE`` for more information.
-
 
 [linkedin-url]: https://linkedin.com/in/marciopassosferreira
 [product-screenshot]: images/screenshot.png
