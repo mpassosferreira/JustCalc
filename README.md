@@ -22,7 +22,7 @@
   </p>
  </p>
   
-## About The Project
+### About The Project
 
 First project created for an IOS development course taught by Digital House in partnership with the SANTANDER CODERS program.
 
@@ -34,8 +34,7 @@ First project created for an IOS development course taught by Digital House in p
 git clone https://github.com/mpassosferreira/KidsMakeMath.git
 ```
 
-
-## Contributing
+### Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire and create. Any contributions you make are **greatly appreciated**.
 
@@ -45,7 +44,11 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Meta
+### License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+### Contact
 
 Marcio Passos – [@mpassosferreira](https://twitter.com/mpassosferreira)
 
