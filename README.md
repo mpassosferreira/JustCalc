@@ -50,8 +50,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### Contact
 
-Marcio Passos – https://img.shields.io/twitter/url?label=Tweet%20to%20%40mpassosferreira&style=social&url=https%3A%2F%2Ftwitter.com%2Fmpassosferreira
-
+Marcio Passos ![Twitter URL](https://img.shields.io/twitter/url?label=Tweet%20to%20%40mpassosferreira&style=social&url=https%3A%2F%2Ftwitter.com%2Fmpassosferreira)
 
 [linkedin-url]: https://linkedin.com/in/marciopassosferreira
 [product-screenshot]: images/screenshot.png
