@@ -50,7 +50,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### Contact
 
-Marcio Passos – <a href="https://twitter.com/intent/tweet?screen_name=TwitterDev&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> [@mpassosferreira](https://twitter.com/mpassosferreira)
+Marcio Passos – https://img.shields.io/twitter/url?label=Tweet%20to%20%40mpassosferreira&style=social&url=https%3A%2F%2Ftwitter.com%2Fmpassosferreira
 
 
 [linkedin-url]: https://linkedin.com/in/marciopassosferreira
