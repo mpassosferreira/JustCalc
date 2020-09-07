@@ -52,7 +52,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40mpassosferreira)](https://twitter.com/mpassosferreira)
 
-![Twitter URL](https://img.shields.io/twitter/url?label=Tweet%20to%20%40mpassosferreira&style=social&url=)
 
 [Twitter URL]: https://twitter.com/mpassosferreira
 [linkedin-url]: https://linkedin.com/in/marciopassosferreira
