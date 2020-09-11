@@ -215,4 +215,16 @@ class ViewController: UIViewController {
         return result
     }
     
+    func buildButton (btn: UIButton, tag: Signals, title: String) {
+       btn.tag = tag.rawValue
+       btn.setTitle(title, for: .normal)
+       btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: sizeButton)
+       btn.backgroundColor = UIColor.white
+    }
+    
+    
+    enum Signals: Int {
+           case plus = 11, minus, times, division
+    }
+    
 }
